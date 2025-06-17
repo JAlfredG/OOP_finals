@@ -1,6 +1,6 @@
 ﻿Public Class Form1
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-        If Convert.ToBoolean(txbUsername.Text = "alfred") AndAlso Convert.ToBoolean(txbPassword.Text = "program") Then
+        If Convert.ToBoolean(txbUsername.Text = "admin") AndAlso Convert.ToBoolean(txbPassword.Text = "admin") Then
             Dim dashboard As New Form2()
             dashboard.Show()
 
@@ -10,5 +10,9 @@
             txbUsername.Clear()
             txbPassword.Clear()
         End If
+    End Sub
+
+    Private Sub txbUsername_TextChanged(sender As Object, e As EventArgs) Handles txbUsername.TextChanged
+
     End Sub
 End Class

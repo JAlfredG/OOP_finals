@@ -33,7 +33,7 @@ Partial Class Form1
         '
         Me.lblUsername.AutoSize = True
         Me.lblUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUsername.Location = New System.Drawing.Point(87, 56)
+        Me.lblUsername.Location = New System.Drawing.Point(54, 46)
         Me.lblUsername.Name = "lblUsername"
         Me.lblUsername.Size = New System.Drawing.Size(110, 25)
         Me.lblUsername.TabIndex = 0
@@ -43,7 +43,7 @@ Partial Class Form1
         '
         Me.lblPassword.AutoSize = True
         Me.lblPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPassword.Location = New System.Drawing.Point(87, 119)
+        Me.lblPassword.Location = New System.Drawing.Point(54, 109)
         Me.lblPassword.Name = "lblPassword"
         Me.lblPassword.Size = New System.Drawing.Size(106, 25)
         Me.lblPassword.TabIndex = 1
@@ -52,7 +52,7 @@ Partial Class Form1
         'txbUsername
         '
         Me.txbUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbUsername.Location = New System.Drawing.Point(218, 53)
+        Me.txbUsername.Location = New System.Drawing.Point(185, 43)
         Me.txbUsername.Name = "txbUsername"
         Me.txbUsername.Size = New System.Drawing.Size(289, 30)
         Me.txbUsername.TabIndex = 2
@@ -60,8 +60,9 @@ Partial Class Form1
         'txbPassword
         '
         Me.txbPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbPassword.Location = New System.Drawing.Point(218, 114)
+        Me.txbPassword.Location = New System.Drawing.Point(185, 104)
         Me.txbPassword.Name = "txbPassword"
+        Me.txbPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txbPassword.Size = New System.Drawing.Size(289, 30)
         Me.txbPassword.TabIndex = 3
         '
@@ -69,7 +70,7 @@ Partial Class Form1
         '
         Me.btnLogin.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.btnLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLogin.Location = New System.Drawing.Point(203, 181)
+        Me.btnLogin.Location = New System.Drawing.Point(170, 171)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(247, 40)
         Me.btnLogin.TabIndex = 4
@@ -80,7 +81,8 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(618, 303)
+        Me.BackColor = System.Drawing.Color.Plum
+        Me.ClientSize = New System.Drawing.Size(562, 247)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.txbPassword)
         Me.Controls.Add(Me.txbUsername)
