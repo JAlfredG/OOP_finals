@@ -1,13 +1,5 @@
 ﻿Public Class Form3
 
-
-    Private Sub btnBackButton_Click_1(sender As Object, e As EventArgs) Handles btnBackButton.Click
-        Dim dashboard As New Form2()
-        dashboard.Show()
-
-        Me.Hide()
-    End Sub
-
     Private Sub btnAddItem_Click(sender As Object, e As EventArgs) Handles btnAddItem.Click
         If Double.TryParse(txbItemPrice.Text, Nothing) AndAlso Double.TryParse(txbItemQuantity.Text, Nothing) AndAlso Not String.IsNullOrWhiteSpace(txbItemName.Text) Then
             MessageBox.Show("Item Added.", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -56,5 +48,12 @@
         Else
             MessageBox.Show("Invalid Inputs.", "Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
+    End Sub
+
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+        Dim dashboard As New Form2()
+        dashboard.Show()
+
+        Me.Hide()
     End Sub
 End Class

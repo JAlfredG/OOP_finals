@@ -12,7 +12,5 @@
         End If
     End Sub
 
-    Private Sub txbUsername_TextChanged(sender As Object, e As EventArgs) Handles txbUsername.TextChanged
 
-    End Sub
 End Class
